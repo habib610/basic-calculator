@@ -1,0 +1,73 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+    background-color: #030303;
+    font-family: 'Lato', sans-serif;
+}
+.calculator{
+    flex: 0 0 70%;
+    border: 5px solid cyan;
+    border-radius: 10px;
+    box-shadow: 1px 1px 20px cyan;
+}
+.screen{
+    width: 100%;
+    font-size: 40px;
+    padding: 30px 20px;
+    color: white;
+    background: #19193a;
+    border: 5px solid cyan;
+    outline: none;
+}
+.buttons{
+    display: flex;
+    flex-wrap: wrap;
+}
+button{
+    flex: 0 0 25%;
+    padding: 15px;
+    border: 2px solid #00dcf0;
+    outline: none;
+    font-weight: 500;
+    border-bottom-left-radius: 10px;
+    border-top-right-radius: 10px;
+    color: orange;
+}
+button:active{
+    background: black;
+}
+.btn-yellow{
+    background: #ff9100;
+    color: white;
+}
+.btn-grey{
+    background: #19193a;
+    color:  #ff9100;
+}
+.btn-equal{
+    background: green;
+    color: white;
+}
+.btn-clear{
+    background: #ff2f2f;
+    color: white;
+    flex:  0 0 35%;
+}
+.btn,.btn-equal,.btn-clear,.back-space{
+    font-size: 36px;
+}
+.back-space{
+    color: #ffffff;
+    display: block;
+    background-color: #ff3c00;
+    flex:1 1;
+}
